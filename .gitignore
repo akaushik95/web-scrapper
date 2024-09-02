@@ -1,0 +1,8 @@
+__pycache__/*
+bin/*
+cache/__pycache__/*
+dataStore/__pycache__/*
+lib/*
+scrape_service/__pycache__/*
+dataStore/localstorage.csv
+flowlogs.log
