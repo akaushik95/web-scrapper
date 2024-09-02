@@ -1,0 +1,6 @@
+2024-09-02 13:07:08 - INFO - {'transaction_id': UUID('28a70b04-68fe-11ef-9c97-32d5efdb1266'), 'pg_no': 50, 'proxy': '127.0.0.1:8765', 'methodName': 'scrapePage'}
+2024-09-02 13:07:11 - INFO - {'transaction_id': UUID('2a78916e-68fe-11ef-9c97-32d5efdb1266'), 'methodName': 'getDataFromCache'}
+2024-09-02 13:07:12 - INFO - {'transaction_id': UUID('2b3717ba-68fe-11ef-9c97-32d5efdb1266'), 'methodName': 'getAllItemsFromDatabase'}
+2024-09-02 13:15:12 - INFO - {'transaction_id': UUID('492ef980-68ff-11ef-b07c-32d5efdb1266'), 'pg_no': 3, 'proxy': '127.0.0.1:8765', 'methodName': 'scrapePage'}
+2024-09-02 13:15:21 - INFO - {'transaction_id': UUID('4ea88386-68ff-11ef-b07c-32d5efdb1266'), 'methodName': 'getDataFromCache'}
+2024-09-02 13:15:23 - INFO - {'transaction_id': UUID('4fe001fc-68ff-11ef-b07c-32d5efdb1266'), 'methodName': 'getAllItemsFromDatabase'}
