@@ -7,8 +7,12 @@
     4. pip3 install requests_html
 4. To start the server: uvicorn main:app --reload / fastapi dev main.py 
 5. Routes
-    1. GET /scrapePages?<pg_no>&<proxy>
+    1. GET /scrapePages?<pg_no>=&<proxy>=
+        X-Token=
     2. POST /getScrapedDataFromCacheById
+        {
+            "item_name": ["3m Espe Relyx Ceramic Primer..."]
+        }
     3. GET /getAllItemsFromDatabase
 6. Folder structure
     ├── README.md
