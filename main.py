@@ -18,7 +18,6 @@ logging.basicConfig(
 )
 
 app = FastAPI()
-#async def scrapePage(pg_no: int, proxy: str, token: str = Depends(Authenticator.basicAuthentication)):
 
 # API endpoints
 @app.get("/scrapePages/{pg_no}&{proxy}")
