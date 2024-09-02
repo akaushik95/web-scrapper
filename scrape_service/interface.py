@@ -1,7 +1,8 @@
 from pydantic import BaseModel
 from typing import List, TypedDict
+from uuid import UUID
 
-class Product(TypedDict):
+class Product(BaseModel):
     name: str
     price: str
     image_uri: str
@@ -16,6 +17,6 @@ class GetDataFromCacheRequest(BaseModel):
 class NotificationRequest(BaseModel):
     pagesToBeScraped: int
     proxy: str
-    transaction_id: str
+    transaction_id: UUID
     pagesScrapedSuccessfully: int
     productsScraped: int
