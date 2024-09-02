@@ -31,7 +31,7 @@ class Scrapper:
         if failed_pages:
             asyncio.create_task(retryFailedPages(failed_pages=failed_pages, proxies=proxies))
 
-        asyncio.create_task(Notifier.sendMessage(NotificationRequest(pagesToBeScraped=pg_no, proxy=proxy, transaction_id=transaction_id, pagesScrapedSuccessfully=pg_no-len(failed_pages), productsScraped=len(all_products))))
+        asyncio.create_task(Notifier.sendMessage(NotificationRequest(pagesToBeScraped=pg_no, transaction_id=transaction_id, pagesScrapedSuccessfully=pg_no-len(failed_pages), productsScraped=len(all_products))))
 
         return {'data': all_products}
     

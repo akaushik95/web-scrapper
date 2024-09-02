@@ -16,7 +16,6 @@ class GetDataFromCacheRequest(BaseModel):
 
 class NotificationRequest(BaseModel):
     pagesToBeScraped: int
-    proxy: str
     transaction_id: UUID
     pagesScrapedSuccessfully: int
     productsScraped: int
