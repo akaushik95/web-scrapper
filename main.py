@@ -20,8 +20,8 @@ logging.basicConfig(
 app = FastAPI()
 
 # API endpoints
-@app.get("/scrapePages/{pg_no}&{proxy}")
-async def scrapePages(pg_no: int, proxy: str, token: str = Depends(Authenticator.basicAuthentication)):
+@app.get("/scrapePages/{pg_no}")
+async def scrapePages(pg_no: int, proxy: Optional[str] = None, token: str = Depends(Authenticator.basicAuthentication)):
     transaction_id = uuid.uuid1()
     logging.info({'transaction_id': transaction_id, 'pg_no': pg_no, 'proxy': proxy, 'methodName': 'scrapePage'})
     return await ScaperService.scrapePages(pg_no=pg_no, proxy=proxy, transaction_id=transaction_id)
