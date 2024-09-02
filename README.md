@@ -1,6 +1,10 @@
 1. clone the repo
 2. create a virtual env
 3. install the required dependencies 
+    1. pip3 install "fastapi[standard]"
+    2. pip3 install cachetools
+    3. pip3 install aiohttp
+    4. pip3 install requests_html
 4. To start the server: uvicorn main:app --reload / fastapi dev main.py 
 5. Routes
     1. GET /scrapePages?<pg_no>&<proxy>
