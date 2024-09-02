@@ -10,7 +10,7 @@ class Scrapper:
     def __init__(self, proxy: Optional[str] = None):
         self.proxy = proxy
     
-    async def scrapePage(self, pg_no: int, proxy: Optional[str], transaction_id: str = 'default') -> Dict[str, List[Product]]:
+    async def scrapePages(self, pg_no: int, proxy: Optional[str], transaction_id: str = 'default') -> Dict[str, List[Product]]:
         all_products: List[Product] = []
         failed_pages: List[int] = []
         proxies = {}

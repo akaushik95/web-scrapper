@@ -1,9 +1,7 @@
 from cache.cache import LocalCache
-import time
 
 class CacheDml:
     async def upsertItemsInCache(data):
-        time.sleep(5)
         for item in data:
             cacheData = LocalCache.getData(item['name'])
             if cacheData is None:

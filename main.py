@@ -21,10 +21,10 @@ app = FastAPI()
 
 # API endpoints
 @app.get("/scrapePages/{pg_no}&{proxy}")
-async def scrapePage(pg_no: int, proxy: str, token: str = Depends(Authenticator.basicAuthentication)):
+async def scrapePages(pg_no: int, proxy: str, token: str = Depends(Authenticator.basicAuthentication)):
     transaction_id = uuid.uuid1()
     logging.info({'transaction_id': transaction_id, 'pg_no': pg_no, 'proxy': proxy, 'methodName': 'scrapePage'})
-    return await ScaperService.scrapePage(pg_no=pg_no, proxy=proxy, transaction_id=transaction_id)
+    return await ScaperService.scrapePages(pg_no=pg_no, proxy=proxy, transaction_id=transaction_id)
 
 @app.post("/getScrapedDataFromCacheById")
 async def getDataFromCache(request: GetDataFromCacheRequest):
