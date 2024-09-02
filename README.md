@@ -30,9 +30,9 @@
         ├── interface.py
         ├── scraper.py
         └── utils.py
-7. Max retries = 3 and delay in retry os of 3sec.
-8. can incorporate any db like mongo/mysql
-9. can include slack api to send message after scrapping.
+7. Max retries = 3 and delay in retry of of 3sec.
+8. can incorporate any db like mongo/mysql (comments in the actual file)
+9. can include slack api to send message after scrapping. (comments in the actual file)
 10. Authentication token: "testing-token"
 11. Steps to start a proxy
     1. pip3 install proxy.py
